@@ -16,7 +16,7 @@ const nextConfig = {
                 hostname: 'wordpress-1345160-4937502.cloudwaysapps.com',
             },
             {
-                protocol: 'https',
+                protocol: 'http',
                 hostname: '144.202.50.187:8000'
             }
         ],
