@@ -17,7 +17,7 @@ export const onMailer = (email: string) => {
 		to: email,
 		// to: "its.rpalm@gmail.com",
 		subject: "Realtime Support",
-		text: "One of your customers on Corinna, just switched to realtime mode",
+		text: "One of your customers on Spread, just switched to realtime mode",
 	};
 
 	transporter.sendMail(mailOptions, function (error, info) {
