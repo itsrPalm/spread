@@ -27,16 +27,16 @@ const CodeSnippet = ({ id }: Props) => {
             border: none;
         }
     ')
-    iframe.src = "https://spread.vercel.app/chatbot"
+    iframe.src = "https://spread-xi.vercel.app/chatbot"
     iframe.classList.add('chat-frame')
     document.body.appendChild(iframe)
     
     window.addEventListener("message", (e) => {
-        if(e.origin !== "https://spread.vercel.app") return null
+        if(e.origin !== "https://spread-xi.vercel.app") return null
         let dimensions = JSON.parse(e.data)
         iframe.width = dimensions.width
         iframe.height = dimensions.height
-        iframe.contentWindow.postMessage("${id}", "https://spread.vercel.app/")
+        iframe.contentWindow.postMessage("${id}", "https://spread-xi.vercel.app/")
     })
         `;
 

@@ -131,8 +131,8 @@ export async function GET() {
 									const accountLink =
 										await stripe.accountLinks.create({
 											account: account.id,
-											refresh_url: `https://spread.vercel.app/callback/stripe/refresh`,
-											return_url: `https://spread.vercel.app/callback/stripe/success`,
+											refresh_url: `https://spread-xi.vercel.app/callback/stripe/refresh`,
+											return_url: `https://spread-xi.vercel.app/callback/stripe/success`,
 											type: "account_onboarding",
 											collection_options: {
 												fields: "currently_due",
